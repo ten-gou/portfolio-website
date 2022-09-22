@@ -1,17 +1,20 @@
 import React from "react";
-import { CssBaseline, Box, Grid, Stack, Button } from "@mui/material";
+import { CssBaseline, Box, Grid, Stack, Button, Typography } from "@mui/material";
+import { styled  } from '@mui/material/styles';
+
+const BoxBackground = styled(Box)(({ theme }) => ({
+    padding: '3rem',
+    background: 'rgb(240, 240, 255)',
+    marginTop: '3rem',
+    marginBottom: '3rem'
+  }));
 
 const Home = () => {
 
     return (
-        <CssBaseline>
-            {/* Navbar Component */}
-
-            {/* Splash Page */}
-            <Box>
-
-            </Box>
-        </CssBaseline>
+        <Box component={'div'}>
+            <Box component={'h1'}>aaaaaaaaa</Box>
+        </Box>
     )
 }
 
