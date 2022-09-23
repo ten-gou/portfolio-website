@@ -1,7 +1,7 @@
 import React from "react";
 import { navbarBg, buttonStyle } from './styles.js';
 
-import { Box, Stack, Button, AppBar, useMediaQuery, ThemeProvider, useTheme, Toolbar } from "@mui/material";
+import { Stack, Button, AppBar, useMediaQuery, useTheme } from "@mui/material";
 
 //collapsing header title component
 const TitleCollapse = () => {
@@ -44,16 +44,13 @@ const AboutCollapse = () => {
 const Navbar = () => {
     return (
         <>
-        <AppBar sx={navbarBg}>
+        <AppBar sx={navbarBg} position='sticky'>
             <Stack flexDirection='row' justifyContent='space-evenly' alignItems='center' marginY='1rem'>
                 <Button sx={buttonStyle}>Code</Button>
                 <Button sx={buttonStyle}>Art</Button>
-
                 {/* plugs in the collapsing title & about me section into the navbar */}
-                <ThemeProvider>
-                    <TitleCollapse></TitleCollapse>
-                    <AboutCollapse></AboutCollapse>
-                </ThemeProvider>
+                <TitleCollapse></TitleCollapse>
+                <AboutCollapse></AboutCollapse>
                 <Button sx={buttonStyle}>Contact</Button>
             </Stack>
         </AppBar>
