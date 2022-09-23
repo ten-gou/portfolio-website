@@ -9,10 +9,6 @@ const TitleCollapse = () => {
 
     //checks to see if the webpage is small or not
     const match = useMediaQuery(theme.breakpoints.up('sm'));
-    const [checked, setChecked] = React.useState(false);
-    const handleChange = () => {
-        setChecked((prev) => !prev)
-    };
 
     //depending on small or not, returns full title or collapsed version
     if (match == true) {
@@ -29,7 +25,7 @@ const AboutCollapse = () => {
 
     //checks to see if the webpage is small or not
     const match = useMediaQuery(theme.breakpoints.up('sm'));
-    const [checked, setChecked] = React.useState(false);
+
 
     //depending on small or not, returns full title or collapsed version
     if (match == true) {
@@ -46,8 +42,8 @@ const Navbar = () => {
         <>
         <AppBar sx={navbarBg} position='sticky'>
             <Stack flexDirection='row' justifyContent='space-evenly' alignItems='center' marginY='1rem'>
-                <Button sx={buttonStyle}>Code</Button>
-                <Button sx={buttonStyle}>Art</Button>
+                <Button sx={buttonStyle} href='/code'>Code</Button>
+                <Button sx={buttonStyle} href='/art'>Art</Button>
                 {/* plugs in the collapsing title & about me section into the navbar */}
                 <TitleCollapse></TitleCollapse>
                 <AboutCollapse></AboutCollapse>

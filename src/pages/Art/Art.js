@@ -9,7 +9,7 @@ const ImageList = () => {
 
         },
         {
-            
+
         }
     ]
 }
@@ -18,6 +18,7 @@ const Art = () => {
 
     return (
         <>
+        <Typography>ART</Typography>
         </>
     )
 }

@@ -6,7 +6,7 @@ const Home = () => {
     const theme = useTheme();
 
     return (
-        <Grid container flexDirection='column' justifyContent='center' alignItems='center'>
+        <Grid container flexDirection='column' justifyContent='center' alignItems='center' spacing={2}>
             <Grid item xs={12}>
                 <Box component='img' src="" /> {/*splash screen image*/}
             </Grid>

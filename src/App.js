@@ -3,10 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import { createTheme, ThemeProvider, styled, CssBaseline } from '@mui/material';
 
-//import the pages for the router here
-import Home from './pages/Home';
+//import components here
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+
+//import the pages for the router here
+import Home from './pages/Home';
+import Art from './pages/Art';
+import Code from './pages/Code';
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -16,7 +20,6 @@ const client = new ApolloClient({
 //lays the groundwork for the night mode toggle
 const theme = createTheme({
   palette: {
-    mode: 'light',
     primary: {
       light: '#ffe6c1',
       main: '#ffe0b2',
@@ -61,9 +64,10 @@ function App() {
           <Offset></Offset>
           <Routes>
             <Route exact path='/' element={<Home />}></Route>
+            <Route exact path='/art' element={<Art />}></Route>
+            <Route exact path='/code' element={<Code />}></Route>
           </Routes>
           <Offset></Offset>
-          <Footer />
           </ThemeProvider>
         </>
       </BrowserRouter>
