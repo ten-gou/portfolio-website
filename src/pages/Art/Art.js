@@ -2,6 +2,7 @@
 import React from "react";
 
 import { CssBaseline, Box, Grid, Stack, Button, Typography } from "@mui/material";
+import LaunchIcon from '@mui/icons-material/Launch';
 
 const ImageList = () => {
     const list = [
@@ -24,21 +25,37 @@ const ImageList = () => {
             desc: 'A weather tracker based on OpenWeather API which can search and log city weather data to local storage',
         },
         {
-            url: '',
-            github: '',
+            url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            github: 'https://github.com/ten-gou/web-portfolio',
             title: 'Web Portfolio',
             desc: 'This Website! Built with React and MUI.',
         }
     ]
 
-    return
+    return (
+        <Box>
+            {list.map((item, index) => {
+                return (
+                        <Grid container spacing={2}>
+                            {/*row one - name and git link*/}
+                            <Grid item xs={9}>{item.title}</Grid>
+                            <Grid item xs={3}><Button href={item.github}>Github<LaunchIcon /></Button></Grid>
+
+                            {/*row two - name and deploy link*/}
+                            <Grid item xs={9}>{item.desc}</Grid>
+                            <Grid item xs={3}><Button href={item.url}>Deployed<LaunchIcon /></Button></Grid>
+                        </Grid>
+                )
+            })}
+        </Box>
+    )
 }
 
 const Art = () => {
 
     return (
         <>
-        <Typography>ART</Typography>
+        <ImageList/>
         </>
     )
 }
