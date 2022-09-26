@@ -1,5 +1,7 @@
 import React from "react";
 
+import { projectTitle, link } from "./styles";
+
 import { Box, Stack, Grid, Button, Typography, useTheme } from "@mui/material";
 import LaunchIcon from '@mui/icons-material/Launch';
 
@@ -38,18 +40,18 @@ const CodeList = () => {
                 return (
                         <Grid container spacing={4} margin={4}>
                             {/*row one - name and git link*/}
-                            <Grid item xs={7} sm={9} textAlign='center'><Typography variant="h4">{item.title}</Typography></Grid>
-                            <Grid item xs={3} sm={3} alignSelf={'center'}><Button href={item.github}>Github<LaunchIcon /></Button></Grid>
+                            <Grid item xs={7} sm={9} sx={projectTitle}><Typography variant="h4">{item.title}</Typography></Grid>
+                            <Grid item xs={3} sm={3} alignSelf={'center'}><Button href={item.github} sx={link}>Github<LaunchIcon /></Button></Grid>
 
                             {/*row two - name and deploy link*/}
                             <Grid item xs={7} sm={9} textAlign='center'>{item.desc}</Grid>
                             {item.url == 'N/A' ? (
                                 <>
-                                <Grid item xs={3} sm={3} alignSelf={'center'}><Button disabled>Deployed<LaunchIcon /></Button></Grid>
+                                <Grid item xs={3} sm={3} alignSelf={'center'}><Button disabled sx={link}>Deployed<LaunchIcon /></Button></Grid>
                                 </>
                             ) : (
                                 <>
-                                <Grid item xs={3} sm={3} alignSelf={'center'}><Button href={item.url}>Deployed<LaunchIcon /></Button></Grid>
+                                <Grid item xs={3} sm={3} alignSelf={'center'}><Button href={item.url} sx={link}>Deployed<LaunchIcon /></Button></Grid>
                                 </>
                             )}
                             
