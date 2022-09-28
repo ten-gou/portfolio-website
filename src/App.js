@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import Art from './pages/Art';
 import Code from './pages/Code';
 import AboutMe from './pages/AboutMe';
+import Contact from './pages/Contact';
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -68,6 +69,7 @@ function App() {
             <Route exact path='/art' element={<Art />}></Route>
             <Route exact path='/code' element={<Code />}></Route>
             <Route exact path='/aboutme' element={<AboutMe />}></Route>
+            <Route exact path='/contact' element={<Contact />}></Route>
           </Routes>
           <Offset></Offset>
           </ThemeProvider>

@@ -47,7 +47,7 @@ const Navbar = () => {
                 {/* plugs in the collapsing title & about me section into the navbar */}
                 <TitleCollapse></TitleCollapse>
                 <AboutCollapse></AboutCollapse>
-                <Button sx={buttonStyle}>Contact</Button>
+                <Button sx={buttonStyle} href='/contact'>Contact</Button>
             </Stack>
         </AppBar>
         </>
