@@ -29,10 +29,10 @@ const AboutCollapse = () => {
 
     //depending on small or not, returns full title or collapsed version
     if (match == true) {
-        return <Button sx={buttonStyle}>About Me</Button>
+        return <Button sx={buttonStyle} href='/aboutme'>About Me</Button>
     }
     else {
-        return <Button sx={buttonStyle}>About</Button>
+        return <Button sx={buttonStyle} href='/aboutme'>About</Button>
     }
 }
 
