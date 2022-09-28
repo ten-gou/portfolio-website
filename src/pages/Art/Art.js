@@ -1,10 +1,14 @@
 /* Image List quilted with title bars */
-import React from "react";
+import * as React from "react";
 
-import { CssBaseline, Box, Grid, Stack, Button, Typography, ImageListItem } from "@mui/material";
+import { CssBaseline, Box, Grid, Stack, Button, Typography, ImageList, ImageListItem } from "@mui/material";
 import LaunchIcon from '@mui/icons-material/Launch';
 
-const ImageList = () => {
+const srcset = (image, size, rows = 1, cols = 1) => {
+    return {}
+}
+
+const Image = () => {
     const list = [
         {
 
@@ -39,7 +43,7 @@ const Art = () => {
 
     return (
         <>
-        <ImageList/>
+        <Image />
         </>
     )
 }
