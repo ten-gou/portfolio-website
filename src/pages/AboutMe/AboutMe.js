@@ -17,12 +17,12 @@ const AboutMe = () => {
             </Grid>
 
             <Grid container xs={12} sm={6} justifyContent={'center'}>
-                <Grid item xs={12} color={theme.palette.secondary.main}><Typography variant={'h3'} textAlign={'center'}>Who I Am</Typography></Grid>
+                <Grid item xs={12} color={theme.palette.secondary.main}><Typography variant={'h4'} textAlign={'center'}>Who I Am</Typography></Grid>
                 <Grid item xs={12}></Grid>
             </Grid>
 
             <Grid container xs={12} sm={6}>
-                <Grid item xs={12} color={theme.palette.secondary.main}><Typography variant={'h3'} textAlign={'center'}>My Interests</Typography></Grid>
+                <Grid item xs={12} color={theme.palette.secondary.main}><Typography variant={'h4'} textAlign={'center'}>My Interests</Typography></Grid>
                 <Grid xs={4} />
                 <Grid item xs={4} color={theme.palette.secondary.main}><List>
                     <ListItem>
