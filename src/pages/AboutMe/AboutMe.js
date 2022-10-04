@@ -5,6 +5,7 @@ import MicIcon from '@mui/icons-material/Mic';
 import CodeIcon from '@mui/icons-material/Code';
 import PoolIcon from '@mui/icons-material/Pool';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+import LaunchIcon from '@mui/icons-material/Launch';
 
 import { link } from './styles';
 
@@ -25,7 +26,7 @@ const AboutMe = () => {
                 Someone who enjoys the fine things in life. <br />
 
                 </Typography></Grid>
-                <Grid item xs={12}><Typography textAlign={'center'}><Button sx={link} href='/contact'>Need to Contact?</Button></Typography></Grid>
+                <Grid item xs={12}><Typography textAlign={'center'}><Button sx={link} href='/contact'>Need to Contact?<LaunchIcon /></Button></Typography></Grid>
             </Grid>
 
             <Grid container xs={12} sm={6}>

@@ -8,7 +8,8 @@ const Contact = () => {
     const Link = () => {
         return  <>
         <Stack>
-            <Button sx={link} href='https://github.com/ten-gou'>Github<LaunchIcon /></Button>
+            <Button sx={link} href='mailto: lwang79@zoho.com'>Email<LaunchIcon /></Button>
+            <Button sx={link} href='https://github.com/ten-gou'>Github</Button>
             <Button sx={link} href='https://www.linkedin.com/in/libin-wang-4265a2121/'>Linkedin<LaunchIcon /></Button>
             <Button sx={link} href='https://www.pixiv.net/en/users/28199511'>Pixiv<LaunchIcon /></Button>
         </Stack>
