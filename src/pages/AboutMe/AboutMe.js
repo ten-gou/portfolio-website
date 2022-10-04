@@ -18,7 +18,9 @@ const AboutMe = () => {
 
             <Grid container xs={12} sm={6} justifyContent={'center'}>
                 <Grid item xs={12} color={theme.palette.secondary.main}><Typography variant={'h4'} textAlign={'center'}>Who I Am</Typography></Grid>
-                <Grid item xs={12}></Grid>
+                <Grid item xs={12}><Typography textAlign={'center'} marginX={36}>
+                AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA
+                </Typography></Grid>
             </Grid>
 
             <Grid container xs={12} sm={6}>
