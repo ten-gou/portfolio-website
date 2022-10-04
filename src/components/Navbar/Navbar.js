@@ -29,10 +29,10 @@ const AboutCollapse = () => {
 
     //depending on small or not, returns full title or collapsed version
     if (match === true) {
-        return <Button sx={buttonStyle} href='/aboutme'>About Me</Button>
+        return <Button sx={buttonStyle} href='/web-portfolio/aboutme'>About Me</Button>
     }
     else {
-        return <Button sx={buttonStyle} href='/aboutme'>About</Button>
+        return <Button sx={buttonStyle} href='/web-portfolio/aboutme'>About</Button>
     }
 }
 
@@ -42,12 +42,12 @@ const Navbar = () => {
         <>
         <AppBar sx={navbarBg} position='sticky'>
             <Stack flexDirection='row' justifyContent='space-evenly' alignItems='center' marginY='1rem'>
-                <Button sx={buttonStyle} href='/code'>Code</Button>
-                <Button sx={buttonStyle} href='/art'>Art</Button>
+                <Button sx={buttonStyle} href='/web-portfolio/code'>Code</Button>
+                <Button sx={buttonStyle} href='/web-portfolio/art'>Art</Button>
                 {/* plugs in the collapsing title & about me section into the navbar */}
                 <TitleCollapse></TitleCollapse>
                 <AboutCollapse></AboutCollapse>
-                <Button sx={buttonStyle} href='/contact'>Contact</Button>
+                <Button sx={buttonStyle} href='/web-portfolio/contact'>Contact</Button>
             </Stack>
         </AppBar>
         </>

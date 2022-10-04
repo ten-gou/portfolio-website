@@ -1,10 +1,7 @@
 import React from "react";
-import { CssBaseline, Box, Grid, Stack, Button, Typography } from "@mui/material";
-import { styled, useTheme } from '@mui/material/styles';
+import { Box, Grid, Typography } from "@mui/material";
 
 const Home = () => {
-    const theme = useTheme();
-
     return (
         <Grid container flexDirection='column' justifyContent='center' alignItems='center' spacing={2}>
             <Grid item xs={12}>
