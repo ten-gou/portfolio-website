@@ -12,10 +12,10 @@ const TitleCollapse = () => {
 
     //depending on small or not, returns full title or collapsed version
     if (match === true) {
-        return <Button sx={buttonStyle} href='/'>Libin Wang's Web Portfolio</Button>
+        return <Button sx={buttonStyle} href='/web-portfolio'>Libin Wang's Web Portfolio</Button>
     }
     else {
-        return <Button sx={buttonStyle} href='/'>Wang's Web Portfolio</Button>
+        return <Button sx={buttonStyle} href='/web-portfolio'>Wang's Web Portfolio</Button>
     }
 };
 
