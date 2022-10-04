@@ -1,4 +1,4 @@
-import { Divider, Button, Box, Grid, List, ListItem, ListItemIcon, ListItemText, Typography, useTheme } from "@mui/material";
+import { Button, Grid, List, ListItem, ListItemIcon, ListItemText, Typography, useTheme } from "@mui/material";
 
 import CreateIcon from '@mui/icons-material/Create';
 import MicIcon from '@mui/icons-material/Mic';

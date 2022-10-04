@@ -1,9 +1,8 @@
-import { Box, Grid, Typography, Stack, useTheme, List, ListItem, ListItemText, ListItemIcon, Button, useMediaQuery } from "@mui/material";
+import { Grid, Typography, Stack, Button } from "@mui/material";
 import LaunchIcon from '@mui/icons-material/Launch';
 import { link } from './styles';
 
 const Contact = () => {
-    const theme = useTheme();
 
     const Link = () => {
         return  <>

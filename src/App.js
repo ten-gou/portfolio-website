@@ -72,6 +72,7 @@ function App() {
             <Route exact path='/contact' element={<Contact />}></Route>
           </Routes>
           <Offset></Offset>
+          <Footer />
           </ThemeProvider>
         </>
       </BrowserRouter>

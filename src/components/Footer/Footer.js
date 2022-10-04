@@ -1,22 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { Stack, Typography, Box, useTheme, Button, Icon, useMediaQuery, IconButton } from '@mui/material';
-import Brightness4Icon from '@mui/icons-material/Brightness4';
-import Brightness7Icon from '@mui/icons-material/Brightness7';
+import React from 'react';
+import { Stack, Button, Box, Typography } from "@mui/material";
+import LaunchIcon from '@mui/icons-material/Launch';
+import { footer, link } from './styles.js';
 
 const Footer = () => {
-    const theme = useTheme();
-    const [darkMode, setDarkMode] = useState(theme.palette.type == 'dark' ? true : false);
-
-    const switchMode = () => {
-        setDarkMode(!darkMode);
-    }
-
     return (
         <>
-        <Box>
-            <IconButton color="inherit">
-                {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
-            </IconButton>
+        <Box sx={footer} position='sticky'>
+            <Stack flexDirection='row' justifyContent='space-evenly' alignItems='center' marginY='1rem'>
+                <Box><Typography textAlign={'center'}><Button sx={link} href='/contact'>Need to Contact?<LaunchIcon /></Button></Typography></Box>
+            </Stack>
         </Box>
         </>
     )

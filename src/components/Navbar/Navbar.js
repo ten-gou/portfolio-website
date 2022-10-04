@@ -11,7 +11,7 @@ const TitleCollapse = () => {
     const match = useMediaQuery(theme.breakpoints.up('sm'));
 
     //depending on small or not, returns full title or collapsed version
-    if (match == true) {
+    if (match === true) {
         return <Button sx={buttonStyle} href='/'>Libin Wang's Web Portfolio</Button>
     }
     else {
@@ -28,7 +28,7 @@ const AboutCollapse = () => {
 
 
     //depending on small or not, returns full title or collapsed version
-    if (match == true) {
+    if (match === true) {
         return <Button sx={buttonStyle} href='/aboutme'>About Me</Button>
     }
     else {
