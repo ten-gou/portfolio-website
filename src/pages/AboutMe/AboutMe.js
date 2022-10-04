@@ -1,10 +1,12 @@
-import { Divider, Box, Grid, List, ListItem, ListItemIcon, ListItemText, Typography, useTheme } from "@mui/material";
+import { Divider, Button, Box, Grid, List, ListItem, ListItemIcon, ListItemText, Typography, useTheme } from "@mui/material";
 
 import CreateIcon from '@mui/icons-material/Create';
 import MicIcon from '@mui/icons-material/Mic';
 import CodeIcon from '@mui/icons-material/Code';
 import PoolIcon from '@mui/icons-material/Pool';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+
+import { link } from './styles';
 
 const AboutMe = () => {
     const theme = useTheme();
@@ -18,9 +20,12 @@ const AboutMe = () => {
 
             <Grid container xs={12} sm={6} justifyContent={'center'}>
                 <Grid item xs={12} color={theme.palette.secondary.main}><Typography variant={'h4'} textAlign={'center'}>Who I Am</Typography></Grid>
-                <Grid item xs={12}><Typography textAlign={'center'} marginX={36}>
-                AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA AAAA
+                <Grid item xs={12}><Typography textAlign={'center'} marginX={20}>
+                
+                Someone who enjoys the fine things in life. <br />
+
                 </Typography></Grid>
+                <Grid item xs={12}><Typography textAlign={'center'}><Button sx={link} href='/contact'>Need to Contact?</Button></Typography></Grid>
             </Grid>
 
             <Grid container xs={12} sm={6}>
