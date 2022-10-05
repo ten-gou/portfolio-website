@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import { createTheme, ThemeProvider, styled, CssBaseline } from '@mui/material';
 
 //import components here
@@ -14,9 +13,6 @@ import Code from './pages/Code';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 
-const client = new ApolloClient({
-  cache: new InMemoryCache(),
-});
 
 //color palette and theming for the website
 //lays the groundwork for the night mode toggle
@@ -57,7 +53,6 @@ const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
 function App() {
   return (
-    <ApolloProvider client={client}>
       <BrowserRouter>
         <>
           <ThemeProvider theme={theme}>
@@ -77,8 +72,6 @@ function App() {
           </ThemeProvider>
         </>
       </BrowserRouter>
-
-    </ApolloProvider>
   );
 }
 
