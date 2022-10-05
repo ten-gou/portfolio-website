@@ -2,7 +2,7 @@
   "name": "web-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ten-gou.github.io/web-portfolio",
+  "homepage": "https://web-portfolio-wang.herokuapp.com/",
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@emotion/react": "^11.10.4",
