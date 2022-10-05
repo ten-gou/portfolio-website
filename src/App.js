@@ -66,11 +66,10 @@ function App() {
           <Offset></Offset>
           <Routes>
             <Route exact path='/' element={<Home />}></Route>
-            <Route exact path='/web-portfolio' element={<Home />}></Route>
-            <Route exact path='/web-portfolio/art' element={<Art />}></Route>
-            <Route exact path='/web-portfolio/code' element={<Code />}></Route>
-            <Route exact path='/web-portfolio/aboutme' element={<AboutMe />}></Route>
-            <Route exact path='/web-portfolio/contact' element={<Contact />}></Route>
+            <Route exact path='/art' element={<Art />}></Route>
+            <Route exact path='/code' element={<Code />}></Route>
+            <Route exact path='/aboutme' element={<AboutMe />}></Route>
+            <Route exact path='/contact' element={<Contact />}></Route>
           </Routes>
           <Offset></Offset>
           <Footer />
