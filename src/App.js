@@ -58,7 +58,7 @@ const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 function App() {
   return (
     <ApolloProvider client={client}>
-      <BrowserRouter basename='/web-portfolio'>
+      <BrowserRouter>
         <>
           <ThemeProvider theme={theme}>
           <CssBaseline />
@@ -70,6 +70,7 @@ function App() {
             <Route exact path='/code' element={<Code />}></Route>
             <Route exact path='/aboutme' element={<AboutMe />}></Route>
             <Route exact path='/contact' element={<Contact />}></Route>
+            <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
           </Routes>
           <Offset></Offset>
           <Footer />
