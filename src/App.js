@@ -1,6 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import { createTheme, ThemeProvider, styled, CssBaseline } from '@mui/material';
 
 //import components here
@@ -13,10 +12,6 @@ import Art from './pages/Art';
 import Code from './pages/Code';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
-
-const client = new ApolloClient({
-  cache: new InMemoryCache(),
-});
 
 //color palette and theming for the website
 //lays the groundwork for the night mode toggle
@@ -57,27 +52,24 @@ const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
 function App() {
   return (
-    <ApolloProvider client={client}>
-      <BrowserRouter basename='/web-portfolio'>
+      <BrowserRouter basename='/'>
         <>
           <ThemeProvider theme={theme}>
           <CssBaseline />
           <Navbar />
           <Offset></Offset>
-          <Routes>
-            <Route exact path='/' element={<Home />}></Route>
-            <Route path='/art' element={<Art />}></Route>
-            <Route path='/code' element={<Code />}></Route>
-            <Route path='/aboutme' element={<AboutMe />}></Route>
-            <Route path='/contact' element={<Contact />}></Route>
+          <Routes basename='/web-portfolio'>
+            <Route exact path='/web-portfolio/' element={<Home />}></Route>
+            <Route path='/web-portfolio/art' element={<Art />}></Route>
+            <Route path='/web-portfolio/code' element={<Code />}></Route>
+            <Route path='/web-portfolio/aboutme' element={<AboutMe />}></Route>
+            <Route path='/web-portfolio/contact' element={<Contact />}></Route>
           </Routes>
           <Offset></Offset>
           <Footer />
           </ThemeProvider>
         </>
       </BrowserRouter>
-
-    </ApolloProvider>
   );
 }
 
