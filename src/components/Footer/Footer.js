@@ -8,7 +8,7 @@ const Footer = () => {
         <>
         <Box sx={footer} position='sticky'>
             <Stack flexDirection='row' justifyContent='space-evenly' alignItems='center' marginY='1rem'>
-                <Box><Typography textAlign={'center'}><Button sx={link} href='/web-portfolio/contact'>Need to Contact?<LaunchIcon /></Button></Typography></Box>
+                <Box><Typography textAlign={'center'}><Button sx={link} href='/contact'>Need to Contact?<LaunchIcon /></Button></Typography></Box>
             </Stack>
         </Box>
         </>
