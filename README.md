@@ -23,7 +23,7 @@ Made by Libin Wang, this program is considered to be under Public Domain License
 
 
 ## 1. Description
-Website for my portfolio of work, both coding and art
+Website for my portfolio of work, both coding and art. Hosted on [Heroku](https://web-portfolio-wang.herokuapp.com/)
 
 ### 1-1. Picture or Video Examples
 
