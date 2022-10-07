@@ -31,7 +31,7 @@ const AboutMe = () => {
 
             <Grid container xs={12} sm={6}>
                 <Grid item xs={12} color={theme.palette.secondary.main}><Typography variant={'h4'} textAlign={'center'}>My Interests</Typography></Grid>
-                <Grid xs={4} />
+                <Grid item xs={4} />
                 <Grid item xs={4} color={theme.palette.secondary.main}><List>
                     <ListItem>
                         <ListItemIcon><CreateIcon /></ListItemIcon>
@@ -54,7 +54,7 @@ const AboutMe = () => {
                         <ListItemText>Working Out</ListItemText>
                     </ListItem>
                 </List></Grid>
-                <Grid xs={4} />
+                <Grid item xs={4} />
             </Grid>
             
         </Grid>
