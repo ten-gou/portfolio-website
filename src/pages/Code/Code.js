@@ -105,6 +105,13 @@ const CodeList = () => {
             title: 'Work Day Scheduler',
             desc: 'A scheduler that allows you to plan out your workday in advance. Has input allotments every hour from 0900, or 9 AM, to 1700, or 5 PM. When you click the update button, it saves the data to your local storage, allowing to reaccess the information at a later time.',
         },
+        {
+            key: 15,
+            url: 'N/A',
+            github: 'https://github.com/ten-gou/individual-python-scripts',
+            title: 'Individual Python Scripts',
+            desc: "A collection of individual python scripts I've made",
+        },
     ]
 
     return (
