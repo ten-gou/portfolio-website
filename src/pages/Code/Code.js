@@ -111,7 +111,7 @@ const CodeList = () => {
             github: 'https://github.com/ten-gou/individual-python-scripts',
             title: 'Individual Python Scripts',
             desc: "A collection of individual python scripts I've made",
-        },
+        }
     ]
 
     return (
